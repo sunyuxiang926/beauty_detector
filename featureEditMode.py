@@ -38,6 +38,8 @@ def faceEditKeyPressed(event, data):
         data.faceCoor[0][0]+=3
     elif event.keysym=='Left':
         data.faceCoor[0][0]-=3
+    elif event.char==' ':
+        data.faceCoor=[[200,200,100,100]]
 
 def faceEditRedrawAll(canvas, data):
     canvas.create_image(data.width/2,data.height/2,image=data.img)
@@ -55,7 +57,8 @@ def faceEditRedrawAll(canvas, data):
                        text="and use 'w' and 'e' to increase or decrease rectangle width", font="Arial 13 bold")
     canvas.create_text(300, 49,
                        text="use up, down, left, right to move the rectangle", font="Arial 13 bold")
-    canvas.create_text(300,560, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
+    canvas.create_text(300,560, text="If there's no rectangle, press 'Space' to generate one", font="Arial 18 bold")
+    canvas.create_text(300,580, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
 
 ####################################
 # leftEyeEdit mode
@@ -96,6 +99,8 @@ def LeyeEditKeyPressed(event, data):
         data.lEyes[0][0]+=3
     elif event.keysym=='Left':
         data.lEyes[0][0]-=3
+    elif event.char==' ':
+        data.lEyes=[[50,50,50,50]]
 
 def LeyeEditRedrawAll(canvas, data):
     canvas.create_image(data.width/2,data.height/2,image=data.img)
@@ -117,7 +122,8 @@ def LeyeEditRedrawAll(canvas, data):
                        text="and use 'w' and 'e' to increase or decrease rectangle width", font="Arial 13 bold")
     canvas.create_text(300, 49,
                        text="use up, down, left, right to move the rectangle", font="Arial 13 bold")
-    canvas.create_text(300,560, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
+    canvas.create_text(300,560, text="If there's no rectangle, press 'Space' to generate one", font="Arial 18 bold")
+    canvas.create_text(300,580, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
     
 ####################################
 # rightEyeEdit mode
@@ -158,6 +164,8 @@ def ReyeEditKeyPressed(event, data):
         data.rEyes[0][0]+=3
     elif event.keysym=='Left':
         data.rEyes[0][0]-=3
+    elif event.char==' ':
+        data.rEyes=[[50,50,50,50]]
 
 def ReyeEditRedrawAll(canvas, data):
     canvas.create_image(data.width/2,data.height/2,image=data.img)
@@ -179,7 +187,8 @@ def ReyeEditRedrawAll(canvas, data):
                        text="and use 'w' and 'e' to increase or decrease rectangle width", font="Arial 13 bold")
     canvas.create_text(300, 49,
                        text="use up, down, left, right to move the rectangle", font="Arial 13 bold")
-    canvas.create_text(300,560, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
+    canvas.create_text(300,560, text="If there's no rectangle, press 'Space' to generate one", font="Arial 18 bold")
+    canvas.create_text(300,580, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
 
 ####################################
 # mouthEdit mode
@@ -220,6 +229,8 @@ def mouthEditKeyPressed(event, data):
         data.mouthCoor[0][0]+=3
     elif event.keysym=='Left':
         data.mouthCoor[0][0]-=3
+    elif event.char==' ':
+        data.mouthCoor=[[50,50,50,50]]
 
 def mouthEditRedrawAll(canvas, data):
     canvas.create_image(data.width/2,data.height/2,image=data.img)
@@ -241,7 +252,8 @@ def mouthEditRedrawAll(canvas, data):
                        text="and use 'w' and 'e' to increase or decrease rectangle width", font="Arial 13 bold")
     canvas.create_text(300, 49,
                        text="use up, down, left, right to move the rectangle", font="Arial 13 bold")
-    canvas.create_text(300,560, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
+    canvas.create_text(300,560, text="If there's no rectangle, press 'Space' to generate one", font="Arial 18 bold")
+    canvas.create_text(300,580, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
     
 ####################################
 # noseEdit mode
@@ -282,6 +294,8 @@ def noseEditKeyPressed(event, data):
         data.noseCoor[0][0]+=3
     elif event.keysym=='Left':
         data.noseCoor[0][0]-=3
+    elif event.char==' ':
+        data.noseCoor=[[50,50,50,50]]
 
 def noseEditRedrawAll(canvas, data):
     canvas.create_image(data.width/2,data.height/2,image=data.img)
@@ -303,4 +317,5 @@ def noseEditRedrawAll(canvas, data):
                        text="and use 'w' and 'e' to increase or decrease rectangle width", font="Arial 13 bold")
     canvas.create_text(300, 49,
                        text="use up, down, left, right to move the rectangle", font="Arial 13 bold")
-    canvas.create_text(300,560, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
+    canvas.create_text(300,560, text="If there's no rectangle, press 'Space' to generate one", font="Arial 18 bold")
+    canvas.create_text(300,580, text="Once done, click the angel on the right to go back", font="Arial 18 bold")
